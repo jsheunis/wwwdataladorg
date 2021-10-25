@@ -726,7 +726,7 @@ section .youtube-iframe {
   font-family: Courier, monospace;
   /* margin: auto; */
   display: inline-block;
-  background-image: url(/img/console.svg);
+  background-image: url(img/console.svg);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
@@ -744,7 +744,7 @@ section .youtube-iframe {
     font-family: Courier, monospace;
     /* margin: auto; */
     display: inline-block;
-    background-image: url(/img/console.svg);
+    background-image: url(img/console.svg);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
@@ -801,7 +801,7 @@ section .youtube-iframe {
 }
 
 .spacer-dlyellow {
-  background-image: url(/img/arrow_yellow.svg);
+  background-image: url(img/arrow_yellow.svg);
   width: 100%;
   background-repeat: no-repeat;
   background-size: auto;
@@ -810,7 +810,7 @@ section .youtube-iframe {
 }
 
 .spacer-dlgrey {
-  background-image: url(/img/arrow_grey.svg);
+  background-image: url(img/arrow_grey.svg);
   width: 100%;
   background-repeat: no-repeat;
   background-size: auto;
