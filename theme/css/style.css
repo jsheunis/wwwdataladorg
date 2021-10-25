@@ -14,22 +14,22 @@
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('theme/fonts/raleway-v22-latin-ext_latin-regular.woff2') format('woff2'),
-       url('theme/fonts/raleway-v22-latin-ext_latin-regular.woff') format('woff');
+       url('../../theme/fonts/raleway-v22-latin-ext_latin-regular.woff2') format('woff2'),
+       url('../../theme/fonts/raleway-v22-latin-ext_latin-regular.woff') format('woff');
 }
 @font-face { /* License: OFL 1.1 */
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('theme/fonts/quicksand-v24-latin-ext_latin-regular.woff2') format('woff2'),
-       url('theme/fonts/quicksand-v24-latin-ext_latin-regular.woff') format('woff');
+       url('../../theme/fonts/quicksand-v24-latin-ext_latin-regular.woff2') format('woff2'),
+       url('../../theme/fonts/quicksand-v24-latin-ext_latin-regular.woff') format('woff');
 }
 
 @font-face { /* License: OFL 1.1 */
   font-family: 'fontello';
-  src: url('theme/fonts/fontello.woff2?75734824') format('woff2'),
-       url('theme/fonts/fontello.woff?75734824') format('woff');
+  src: url('../../theme/fonts/fontello.woff2?75734824') format('woff2'),
+       url('../../theme/fonts/fontello.woff?75734824') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -726,7 +726,7 @@ section .youtube-iframe {
   font-family: Courier, monospace;
   /* margin: auto; */
   display: inline-block;
-  background-image: url('img/console.svg');
+  background-image: url('../../img/console.svg');
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
@@ -744,7 +744,7 @@ section .youtube-iframe {
     font-family: Courier, monospace;
     /* margin: auto; */
     display: inline-block;
-    background-image: url('img/console.svg');
+    background-image: url('../../img/console.svg');
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
@@ -801,7 +801,7 @@ section .youtube-iframe {
 }
 
 .spacer-dlyellow {
-  background-image: url('img/arrow_yellow.svg');
+  background-image: url('../../img/arrow_yellow.svg');
   width: 100%;
   background-repeat: no-repeat;
   background-size: auto;
@@ -810,7 +810,7 @@ section .youtube-iframe {
 }
 
 .spacer-dlgrey {
-  background-image: url('img/arrow_grey.svg');
+  background-image: url('../../img/arrow_grey.svg');
   width: 100%;
   background-repeat: no-repeat;
   background-size: auto;
