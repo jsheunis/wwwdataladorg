@@ -1,31 +1,57 @@
-AUTHOR = 'Stephan Heunis'
-SITENAME = 'DataLad.org'
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- #
+from __future__ import unicode_literals
+
+#
+# About the site
+#
+AUTHOR = 'DataLad Developers'
+SITETITLE = 'datalad.org'
+# SITESUBTITLE = 'at <a href="http://www.fz-juelich.de/inm/inm-7/EN/Home/home_node.html">Jülich</a>'
+SITENAME = 'DataLad'
 SITEURL = ''
 
-PATH = 'content'
-
-TIMEZONE = 'Europe/Rome'
-
+TIMEZONE = 'Europe/Berlin'
 DEFAULT_LANG = 'en'
+LOCALE = 'en_US.UTF-8'
+
+#
+# Configure Pelican a bit
+#
+PATH = 'content'
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = [ 'sitemap' ]
+SITEMAP = { 'format': 'xml' }
+
+DIRECT_TEMPLATES = ['404']  # unset all templates; add 404
+THEME = 'theme'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (('Pelican', 'https://getpelican.com/'),
-         ('Python.org', 'https://www.python.org/'),
-         ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
-         ('You can modify those links in your config file', '#'),)
+#
+# Configure the site
+#
+MENUITEMS = (('integrations', 'integrations.html'),
+             ('resources', 'resources.html'),
+)
+STATIC_PATHS = ['img/', 'static/']
+EXTRA_PATH_METADATA = {
+    "static/apple-touch-icon.png": {'path': ''},
+    "static/browserconfig.xml": {'path': ''},
+    "static/favicon-16x16.png": {'path': ''},
+    "static/favicon-32x32.png": {'path': ''},
+    "static/favicon.ico": {'path': ''},
+    "static/humans.txt": {'path': ''},
+    "static/leitfaden.pdf": {'path': ''},
+    "static/manifest.json": {'path': ''},
+    "static/mstile-150x150.png": {'path': ''},
+    "static/robots.txt": {'path': ''},
+}
 
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+
 
 DEFAULT_PAGINATION = False
 
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# We prefer document-relative URLs
+RELATIVE_URLS = True
