@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="DataLad Developers" />
+
+  <title>DataLad &ndash; DataLad</title>
+
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#000000">
+
+  <link rel="stylesheet" type="text/css" href="./theme/css/style.css">
+
+  <link rel="license" hreflang="en" href="./copyright.html" />
+</head>
+
+<body>
+  <main>
+    <!-- Navigation bar -->
+    <nav class='card'>
+      <div>
+        <ul>
+          <li id="logo"><a href="."><img src="/img/logo/logo_solo.svg" alt="DataLad Logo" width="30em"/></a></li>
+          <li><a href="./integrations.html" >integrations</a></li>
+          <li><a href="./resources.html" >resources</a></li>
+        </ul>
+      </div>
+      <div class="push">
+        <ul >
+          <li><a class='icon-twitter' aria-label='Twitter' href="https://twitter.com/datalad"></a></li>
+          <li><a class='icon-github' aria-label='GitHub' href="https://github.com/datalad/datalad"></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main  content of a page -->
+    <div id='content'>
+
+<!-- For the index.html page, include hero outside article tag -->
+<div class="hero">
+  <div class="hero-image">
+    <img src="/img/datalad_hero_v5.svg" alt="DataLad overview" />
+  </div>
+  <div class="hero-body">
+    <!-- <img src="/img/logo/datalad_logo_wide_yw.svg" alt="DataLad Logo"> -->
+    <p>Distributed data management<br><br>Free and open source</p>
+    <a class="button" href="">Get DataLad &nbsp; &#10140;</a>
+  </div>
+  <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+    <polygon points="0,100 100,0 100,100" />
+  </svg>
+</div>
+
+<!-- Enter page content inside div in the article tag -->
+<article>
+  <!-- <header>
+    <h1 id="datalad">DataLad</h1>
+  </header> -->
+  <div>
+    
+
+<div class="spacer-dlyellow"></div>
+
+<div class="cardtest">  
+  <div class="whattext">
+    <h1>Keep track</h1>
+    <p>      
+      Building on top of <a href="https://git-scm.com/">Git</a>
+      and <a href="https://git-annex.branchable.com/">git-annex</a>,
+      DataLad allows you to version control arbitrarily large files in datasets,
+      without the need for custom data structures, central infrastructure, or third party services.
+      <ul>
+        <li>View data change history</li>
+        <li>Revert to previous versions</li>
+        <li>Capture full provenance record</li>
+        <li>Ensure complete reproducibility</li>
+      </ul>
+    </p>
+    
+  </div>
+  <div class="whatimg">
+    <img src="/img/version_control_stray_branch.svg" alt="DataLad overview main">
+  </div>
+</div>
+
+<div class="spacer-dlgrey"></div>
+
+<div class="cardtest">  
+  <div class="whatimg">
+    <img src="/img/nested_datasets_laptop.svg" alt="DataLad overview main">
+  </div>
+  <div class="whattext">
+    <h1>Create structure</h1>
+    <p>
+      A <em>DataLad dataset</em> is just a computer directory with files that is managed by DataLad.
+      Datasets can contain other datasets, known as subdatasets, nested arbitrarily deep.
+      DataLad can perform commands recursively across a hierarchy of datasets while maintaining its advanced provenance capture abilities.
+    </p>
+  </div>
+</div>
+
+<div class="spacer-dlyellow"></div>
+
+<div class="cardtest">  
+  <div class="whattext">
+    <h1>Collaborate</h1>
+    <p>
+      DataLad lets you consume datasets provided by others, and collaborate with them.
+      You can install existing datasets and update them from their sources,
+      or create sibling datasets that you can publish updates to and pull updates
+      from. The collaborative power of <a href="https://git-scm.com/">Git</a>, for your data.
+    </p>
+  </div>
+  <div class="whatimg">
+    <img src="/img/collaborate.svg" alt="DataLad overview main">
+  </div>
+</div>
+
+<div class="spacer-dlgrey"></div>
+
+<div class="cardtest">  
+  <div class="whatimg">
+    <img src="/img/thirdparty.svg" alt="DataLad overview main">
+  </div>
+  <div class="whattext">
+    <h1>Integrate</h1>
+    <p>
+      Apart from git and git-annex, DataLad is integrated with a variety of hosting services and data management platforms.
+      Export datasets to third party services such as GitHub, GitLab, or Figshare with built-in commands.
+      Or use a multitude of other DataLad-compatible third party services such as Dropbox, Google Drive, Amazon S3, or owncloud.
+      <br><br>
+      <a class="button" href="integrations.html">Browse all integrations &nbsp; &#10140;</a>
+      
+    </p>
+  </div>
+</div>
+
+<div class="spacer-dlyellow"></div>
+
+<div class="cardtest">  
+  <div class="whattext">
+    <h1>Use DataLad</h1>
+    <p>
+      DataLad is packaged as a free and open source command line tool with a Python API and is compatible with
+      all major operating systems. Use DataLad to:
+      <ul>
+        <li><code>create</code> new datasets locally</li>
+        <li><code>clone</code> online datasets</li>
+        <li><code>get</code> content on-demand</li>
+        <li><code>save</code> changes to datasets</li>
+        <li><code>drop</code> content as needed</li>
+        <li><code>push</code> changes to a remote store</li>
+        <li>... and much more!</li>
+      </ul>
+    </p>
+    <a class="button" href="">Try it out in your browser &nbsp; &#10140;</a>
+  </div>
+  <div class="typewriter">
+    <p>
+      ~
+      <br>
+    </p>
+    <div class="typewriter-text">
+      datalad create...
+    </div>
+    <!-- <div class="typewriter-text">datalad clone</div>
+    <div class="typewriter-text">datalad get</div>
+    <div class="typewriter-text">datalad drop</div> -->
+  </div>
+  
+</div>
+
+<div class="spacer-dlgrey"></div>
+
+
+
+
+  </div>
+</article>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-left">
+        <img src="/img/logo/datalad_logo_wide_yw.svg" alt="">
+        <p>
+          DataLad is a distributed and collaborative data management system supporting
+          arbitrarily large datasets, on-demand content retrieval, dataset and file nesting,
+          data version control, provenance capture, and metadata management.
+          <br><br>
+          DataLad development is supported by...
+        </p>
+      </div>
+      <div class="footer-middle">
+        <h3>&nbsp;&nbsp;&nbsp;RESOURCES</h3>
+        <ul>
+          <li><a href="">DataLad on PyPI</a></li>
+          <li><a href="">DataLad on Conda</a></li>
+          <li><a href="">The DataLad Handbook</a></li>
+          <li><a href="">The Developer Docs</a></li>
+          <li><a href="">Contribute on GitHub</a></li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <br><br>
+        <ul>
+          <li><a href="">Join the community</a></li>
+          <li><a href="">Ask a question on Neurostars</a></li>
+          <li><a href="">...</a></li>
+          <li><a href="">...</a></li>
+        </ul>
+      </div>
+      
+      <p class="license"><small>
+        content licensed <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">cc-by-sa</a>
+        <span class='break'>—</span> ©2015–2021 DataLad Developers <span class='break'>—</span>
+        unless <a rel="license" href='/copyright.html'>indicated otherwise</a>
+      </small></p>
+    </footer>
+  </main>
+</body>
+</html>
