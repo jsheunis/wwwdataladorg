@@ -1,4 +1,4 @@
-const file_path = '/static/integrations.json';
+const file_path = 'static/integrations.json';
 
 var app = new Vue({
     el: "#app",
