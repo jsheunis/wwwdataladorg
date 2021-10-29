@@ -32,7 +32,7 @@ FEED_ALL_ATOM = None
 #
 # Configure the site
 #
-MENUITEMS = (('integrations', 'integrations.html'),
+MENUITEMS = (('integrations', '#integrate'),
              ('resources', 'resources.html'),
 )
 STATIC_PATHS = ['img/', 'static/']
