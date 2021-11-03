@@ -48,7 +48,7 @@
    showgrid="false"
    inkscape:zoom="0.33732415"
    inkscape:cx="1670.5"
-   inkscape:cy="671.46096"
+   inkscape:cy="671.46097"
    inkscape:window-width="2542"
    inkscape:window-height="969"
    inkscape:window-x="0"
@@ -66,10 +66,10 @@
 </style>
 <g
    id="g2970"
-   transform="translate(-0.52259713,-0.01966224)"><polygon
+   transform="matrix(0.85826,0,0,0.85826,98.862495,94.977898)"><polygon
      id="Path-3"
      class="st0"
-     points="774.5,40.4 922.4,162.5 1058.1,227.2 1142.1,457.4 1119.8,596.9 951.7,664.8 844.1,536.5 647.5,235.3 641.1,162.5 "
+     points="1142.1,457.4 1119.8,596.9 951.7,664.8 844.1,536.5 647.5,235.3 641.1,162.5 774.5,40.4 922.4,162.5 1058.1,227.2 "
      transform="translate(199.31946,246.52887)" /><path
      id="Path-2"
      class="st1"
@@ -84,7 +84,7 @@
      rx="367.60001"
      ry="142" /><polygon
      id="Rectangle-5"
-     points="628.7,433.2 127.9,433.2 100.1,83.1 656.5,83.1 "
+     points="656.5,83.1 628.7,433.2 127.9,433.2 100.1,83.1 "
      transform="rotate(-40,464.2436,302.34202)" /><ellipse
      id="Oval-2-Copy-3"
      transform="rotate(139.99989)"

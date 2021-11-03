@@ -297,9 +297,21 @@
       "src": "fontawesome"
     },
     {
-      "uid": "559647a6f430b3aeadbecd67194451dd",
-      "css": "menu",
-      "code": 61641,
+      "uid": "5211af474d3a9848f67f945e2ccaf143",
+      "css": "cancel",
+      "code": 59410,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "0f4cae16f34ae243a6144c18a003f2d8",
+      "css": "cancel-circled",
+      "code": 59411,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "31951fbb9820ed0690f675b3d495c8da",
+      "css": "chat-empty",
+      "code": 61670,
       "src": "fontawesome"
     }
   ]

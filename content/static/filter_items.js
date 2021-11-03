@@ -1,5 +1,7 @@
+// File path where integrations/extensions/use cases are listed
 const file_path = '/static/integrations.json';
 
+// Create VueJS app to load `integrations.json` and allow filtering by name/tag
 var app = new Vue({
     el: "#app",
     data: {
@@ -13,7 +15,8 @@ var app = new Vue({
         tag_options: [],
         tag_options_filtered: [],
         tag_options_available: [],
-        popoverShow: false
+        popoverShow: false,
+        popoverHide: true
 
     },
     computed: {
@@ -44,7 +47,7 @@ var app = new Vue({
     methods: {
       getJSONblob(file) {
         var app = this;
-        var rawFile = new XMLHttpRequest(); // https://www.dummies.com/programming/php/using-xmlhttprequest-class-properties/
+        var rawFile = new XMLHttpRequest();
         rawFile.onreadystatechange = function () {
             if(rawFile.readyState === 4) {
                 if(rawFile.status === 200 || rawFile.status == 0) {
@@ -72,12 +75,6 @@ var app = new Vue({
         }
         return all_tags
       },
-      toggleTagDropdown() {
-        dd = this.$refs.tag_dropdown
-        if (!dd.shown) {
-          dd.show()
-        }
-      },
       addSearchTag(option) {
         this.search_tags.push(option);
         this.clearSearchTagText();
@@ -94,6 +91,7 @@ var app = new Vue({
         this.tag_text = '';
         this.filterTags();
         this.popoverShow = false
+        this.popoverHide = true;
       },
       filterTags() {
         this.tag_options_available = this.tag_options.filter(x => this.search_tags.indexOf(x)===-1);
@@ -101,12 +99,33 @@ var app = new Vue({
       },
       inputTagText() {
         this.popoverShow = true;
+        this.popoverHide = false;
         this.filterTags();
       },
-
     },
     beforeMount(){
       this.getJSONblob(file_path)
       this.tag_options = this.collateTags(this.all_items)
+    },
+    mounted(){
+      this.tag_options_filtered = this.tag_options;
+      this.tag_options_available = this.tag_options;
     }
 });
+
+
+// Add observer to check when typewriter element scrolls into view and add/remove animation class
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const console = entry.target.querySelector('.typewriter-text');
+    // At intersection, add animation class and return
+    if (entry.isIntersecting) {
+      console.classList.add('typing');
+      return;
+    }
+    // Not intersecting: remove class
+    console.classList.remove('typing');
+  });
+});
+// Tell observer to track the correct element
+observer.observe(document.querySelector('.card-img.use-datalad'));

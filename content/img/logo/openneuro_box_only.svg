@@ -24,8 +24,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.3065141"
-     inkscape:cx="148.86943"
-     inkscape:cy="91.464764"
+     inkscape:cx="148.86942"
+     inkscape:cy="91.464761"
      inkscape:window-width="1440"
      inkscape:window-height="777"
      inkscape:window-x="539"
@@ -40,7 +40,8 @@
      id="layer1"
      transform="translate(-41.804643,-103.03003)">
     <g
-       id="g21482">
+       id="g21482"
+       transform="matrix(0.8711176,0,0,0.8711176,7.5142472,15.518136)">
       <path
          fill="#e2e2e2"
          d="m 72.49381,112.6135 v 16.72383 l -14.455715,8.19041 0.042,-16.54182 z"
