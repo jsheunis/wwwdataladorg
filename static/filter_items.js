@@ -1,5 +1,5 @@
 // File path where integrations/extensions/use cases are listed
-const file_path = '/static/integrations.json';
+const file_path = 'static/integrations.json';
 
 // Create VueJS app to load `integrations.json` and allow filtering by name/tag
 var app = new Vue({
@@ -54,7 +54,7 @@ var app = new Vue({
                     var allText = rawFile.responseText;
                     app.all_items = JSON.parse(allText);
                 } else if (rawFile.status === 404) {
-                  router.push({ name: '404'})
+                  console.log('404 status returned')
                 } else {
                   // TODO: figure out what to do here
                 }
