@@ -512,7 +512,7 @@ nav li a {
   cursor: help;
 }
 
-.menu:hover + .navbottom {
+.menu:hover .navbottom {
   display: unset;
 }
 
@@ -523,7 +523,7 @@ nav li a {
   }
   
   .menu {
-    display: unset;
+    display: inherit;
   }  
 }
 
