@@ -16,8 +16,8 @@ var app = new Vue({
         tag_options_filtered: [],
         tag_options_available: [],
         popoverShow: false,
-        popoverHide: true
-
+        popoverHide: true,
+        radio_group_value: 'all'
     },
     computed: {
         filteredItems() {
@@ -54,7 +54,7 @@ var app = new Vue({
                     var allText = rawFile.responseText;
                     app.all_items = JSON.parse(allText);
                 } else if (rawFile.status === 404) {
-                  console.log('404 status returned')
+                  router.push({ name: '404'})
                 } else {
                   // TODO: figure out what to do here
                 }
@@ -76,6 +76,7 @@ var app = new Vue({
         return all_tags
       },
       addSearchTag(option) {
+        this.radio_group_value = false;
         this.search_tags.push(option);
         this.clearSearchTagText();
         this.filterTags();
@@ -101,6 +102,23 @@ var app = new Vue({
         this.popoverShow = true;
         this.popoverHide = false;
         this.filterTags();
+      },
+      selectRadioButton() {
+        val = this.radio_group_value;
+        console.log(val)
+
+        if (val == 'all'){
+          this.search_tags = [];
+          this.filterTags();
+        }
+        else if (val == 'integration'){
+          this.search_tags = ['integration'];
+          this.filterTags();
+        }
+        else if (val == 'extension'){
+          this.search_tags = ['extension'];
+          this.filterTags();
+        }
       },
     },
     beforeMount(){
